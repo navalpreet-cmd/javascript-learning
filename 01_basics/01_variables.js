@@ -39,8 +39,6 @@ console.table([typeof name, typeof age, typeof isLoggedIn]);
 // 6) null
 // 7) undefined
 
-
-
 //*********************Non Primitive data type*****************
 
 // 1) Object
