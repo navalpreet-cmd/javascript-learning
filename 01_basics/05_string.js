@@ -22,7 +22,28 @@ console.log(gameName.charCodeAt(-5));
 console.log(gameName.codePointAt(5));
 console.log(gameName.concat(" Hello"))
 console.log(gameName.endsWith("e"));
-console.log(gameName.includes("Name",));
+console.log(gameName.includes("Name"));
+console.log(gameName.indexOf('e'));
+console.log(gameName.lastIndexOf('e'));
+console.log(gameName.length);
+console.log(gameName.localeCompare());
+
+
+let myString = "Hello";
+// let newString = [];
+// for(let i = myString.length - 1; i >= 0 ; i--){
+//     newString = newString + myString[i];
+// }
+// console.log(newString);
+let newString = myString.split("").reverse().join("");
+console.log(newString);
+if(newString===myString)
+{
+    console.log("palindrome")
+}
+else{
+    console.log("not")
+}
 
 
 
