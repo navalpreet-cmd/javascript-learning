@@ -47,5 +47,68 @@ else{
 
 
 
+// Write a function processString(str) that takes a string and returns a new string with the following modifications:
+
+// Remove all whitespace from the beginning and end of the string.
+
+// Convert the entire string to lowercase.
+
+// Replace all occurrences of the word "javascript" with "JS".
+
+// Return the modified string.
+
+function processString(str){
+    let newString = str.trim();
+    newString = newString.toLowerCase();
+    newString = newString.replaceAll("javascript","JS");
+    //The trim() method in JavaScript is a built-in function of String objects designed to remove whitespace characters from both ends (leading and trailing) of a string. It returns a new string with the whitespace removed, leaving the original string unchanged. 
+    return newString;
+}
+let str = "   I love JavaScript! JavaScript is awesome.   ";
+
+let newReturnedString = processString(str);
+console.log(newReturnedString);
+
+// Write a function countVowels(str) that takes a string and returns the number of vowels (a, e, i, o, u) it contains. The function should count both uppercase and lowercase vowels.
+function countVowels(str){
+    let vowelString = "aeiou";
+    let count = 0;
+    for(let char of str){
+        if(vowelString.includes(char))
+        {
+            count++;
+        }
+    }
+    console.log(`Number of vowels ${count}`);
+}
+countVowels("Hello World!");
+countVowels("My name is Naval");
 
 
+let yourName = "Naval Preet";
+let space = yourName.replaceAll(" ","");
+console.log(space);
+
+
+// unique palindrome substrings input: "abba"
+
+let givenString = "abba";
+let splitStr = givenString.split("");
+let count = 0;
+let substr = "";
+// for(let char of givenString){
+//     substr = substr + char;
+//     let palindromeString = substr.split('').reverse().join('');
+//     if(substr == palindromeString){
+//         count++;
+//         console.log(substr)
+//     }
+// }
+// console.log(count);
+for(let i = 0; i < givenString.length ; i++){
+    for(let j = 1; j < givenString.length; j++){
+        if(givenString[i] == givenString[j]){
+            
+        }
+    }
+}
